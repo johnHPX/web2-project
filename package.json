@@ -1,0 +1,19 @@
+{
+  "name": "web2-project",
+  "version": "1.0.0",
+  "description": "projeto web 2 imdb api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnHPX/web2-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnHPX/web2-project/issues"
+  },
+  "homepage": "https://github.com/johnHPX/web2-project#readme"
+}
