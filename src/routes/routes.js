@@ -29,17 +29,26 @@ router.get("/api/filmes/:filme", (req, res) => {
     }
 })
 ///adicionar novos filmes na lista
-router.post("/api/filmes/", (req, res) => {
-    
+app.post("/api/filmes/", (req, res) => {
+    filmes.push(req.body)
 })
 
 ///atualizar filmes existentes na lista
-router.put("/api/filmes", (req, res) => {
+app.put("/api/filmes", (req, res) => {
+    let filme = req.body
+    filmes = filmes.map(elem => {
+        if (filme.nome == elem.nome){
+            elem = filme
+        }
+
+    })
 
 })
 
 
-router.delete("/api/filmes", (req, res) => {
+app.delete("/api/filmes", (req, res) => {
+    let filme = req.params.filme.toLowerCase()
+    filmes = filmes.filter((elem) => filme.nome != elem.nome)
 
 })
 
