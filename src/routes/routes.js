@@ -28,5 +28,20 @@ router.get("/api/filmes/:filme", (req, res) => {
         }
     }
 })
+///adicionar novos filmes na lista
+router.post("/api/filmes/", (req, res) => {
+    
+})
+
+///atualizar filmes existentes na lista
+router.put("/api/filmes", (req, res) => {
+
+})
+
+
+router.delete("/api/filmes", (req, res) => {
+
+})
+
 
 module.exports = router;
