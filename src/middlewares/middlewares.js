@@ -1,6 +1,12 @@
+
 function isSemana(req, res, next){
-    let data = new Date()
-    console.log(data)
+    let dia = new Date().getDay()
+    if(dia<5){
+        next()
+    } else {
+        return "Acesso permitido apenas Segunda a Sexta"
+    }
+    
 }
 
 function addLog(req, res, next){
