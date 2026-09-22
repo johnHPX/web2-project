@@ -1,25 +1,13 @@
 let express = require('express')
 let router = express.Router()
+let fs = require('fs')
 
-let filmes = fs.readFileSync("./filmes.json", 'utf8')
+let filmes = fs.readFileSync("../repository/filmes.json", 'utf8')
 filmes = JSON.parse(filmes)
-//levar para repository
-
-router.get("/", (req, res) => {
-    res.sendFile("index.html", { root: __dirname})
-
-});
 
 router.get("/api/filmes", (req, res) => {
 	res.json(filmes)
-
 })
-
-router.get("/filmes/:filme", (req, res) => {
-    res.sendFile(`filme.html`, {root: __dirname})
-    }
-)
-
 router.get("/api/filmes/:filme", (req, res) => {
     let filme = req.params.filme 
     for (i of filmes){
@@ -40,17 +28,22 @@ app.put("/api/filmes", (req, res) => {
         if (filme.nome == elem.nome){
             elem = filme
         }
-
     })
-
 })
-
-
 app.delete("/api/filmes", (req, res) => {
     let filme = req.params.filme.toLowerCase()
     filmes = filmes.filter((elem) => filme.nome != elem.nome)
-
 })
+/*
+router.get("/", (req, res) => {
+    res.sendFile("index.html", { root: __dirname})
+});
+
+router.get("/filmes/:filme", (req, res) => {
+    res.sendFile(`filme.html`, {root: __dirname})
+    }
+)
+ */
 
 
 module.exports = router;
