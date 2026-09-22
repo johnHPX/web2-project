@@ -3,7 +3,7 @@ let router = express.Router()
 
 let filmes = fs.readFileSync("./filmes.json", 'utf8')
 filmes = JSON.parse(filmes)
-
+//levar para repository
 
 router.get("/", (req, res) => {
     res.sendFile("index.html", { root: __dirname})
