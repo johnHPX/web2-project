@@ -1,8 +1,11 @@
-let porta = 8080
-let router = require('./routes/routes.js')
-let middlewares = require('./middlewares/middlewares.js')
-let express = require('express')
-let app = express()
+const porta = 8080
+const router = require('./routes/routes.js')
+const middleware = require('./middlewares/middlewares.js')
+const express = require('express')
+const app = express()
+
+app.use(middleware.addLog)
+app.use(middleware.isSemana)
 app.use('/', router)
 
 app.listen(porta, (req,res) => {
