@@ -1,6 +1,6 @@
-let express = require('express')
-let router = express.Router()
-let fs = require('fs')
+const express = require('express')
+const router = express.Router()
+const fs = require('fs')
 
 let filmes = fs.readFileSync("./repository/filmes.json", 'utf8')
 filmes = JSON.parse(filmes)
