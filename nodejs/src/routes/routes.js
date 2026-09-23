@@ -11,7 +11,7 @@ router.get("/api/filmes", (req, res) => {
 router.get("/api/filmes/:filme", (req, res) => {
     let filme = req.params.filme 
     for (i of filmes){
-        if(i.nome.includes(filme)){
+        if(i.titulo.includes(filme)){
             res.json(i);
         }
     }
