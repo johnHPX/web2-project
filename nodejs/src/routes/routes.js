@@ -1,11 +1,16 @@
 const express = require('express')
 const router = express.Router()
 const fs = require('fs')
+const pdfkit = require('pdfkit')
 
 let filmes = fs.readFileSync("./repository/filmes.json", 'utf8')
 filmes = JSON.parse(filmes)
 //verificar rotas post put delete
 //nas rotas ainda falta persistencia pois é tirado o objeto da variavel mas nao é escrito em filmes.json
+
+router.get("/", (req, res) => {
+    res.send("Está funcionando");
+});
 router.get("/api/filmes", (req, res) => {
 	res.json(filmes)
 })
@@ -15,6 +20,18 @@ router.get("/api/filmes/:filme", (req, res) => {
     lista = filmes.filter(elem => elem.titulo.includes(filme))
     res.json(lista)
 })
+//tentando gerar pdf
+router.get("/api/download/pdf", (req, res) => {
+    let pdf = new pdfkit()
+    pdf.text(JSON.stringify(filmes))
+    pdf.pipe(fs.createWriteStream('filmes.pdf'))
+    pdf.end()
+    res.download('./filmes.pdf')
+
+
+
+})
+
 ///adicionar novos filmes na lista
 router.post("/api/filmes/", (req, res) => {
     filmes.push(req.body) //verificar
@@ -34,9 +51,6 @@ router.delete("/api/filmes", (req, res) => {
     filmes = filmes.filter((elem) => filme.titulo != elem.titulo) //
 })
 
-router.get("/", (req, res) => {
-    res.send("Está funcionando");
-});
 /*
 router.get("/filmes/:filme", (req, res) => {
     res.sendFile(`filme.html`, {root: __dirname})
