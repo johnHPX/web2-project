@@ -4,7 +4,7 @@ const fs = require('fs')
 
 let filmes = fs.readFileSync("./repository/filmes.json", 'utf8')
 filmes = JSON.parse(filmes)
-
+//nas rotas ainda falta persistencia pois é tirado o objeto da variavel mas nao é escrito em filmes.json
 router.get("/api/filmes", (req, res) => {
 	res.json(filmes)
 })
@@ -25,14 +25,14 @@ router.post("/api/filmes/", (req, res) => {
 router.put("/api/filmes", (req, res) => {
     let filme = req.body
     filmes = filmes.map(elem => {
-        if (filme.nome == elem.nome){
+        if (filme.titulo == elem.titulo){
             elem = filme
         }
     })
 })
 router.delete("/api/filmes", (req, res) => {
     let filme = req.params.filme.toLowerCase()
-    filmes = filmes.filter((elem) => filme.nome != elem.nome)
+    filmes = filmes.filter((elem) => filme.titulo != elem.titulo)
 })
 
 router.get("/", (req, res) => {
