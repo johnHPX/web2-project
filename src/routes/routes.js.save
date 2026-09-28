@@ -1,0 +1,29 @@
+let filmes = fs.readFileSync("./filmes.json", 'utf8')
+filmes = JSON.parse(filmes)
+
+
+app.get("/", (req, res) => {
+    res.sendFile("index.html", { root: __dirname})
+
+});
+
+app.get("/api/filmes", (req, res) => {
+	res.json(filmes)
+
+})
+
+app.get("/filmes/:filme", (req, res) => {
+    res.sendFile(`filme.html`, {root: __dirname})
+    }
+)
+
+app.get("/api/filmes/:filme", (req, res) => {
+    let filme = req.params.filme 
+    for (i of filmes){
+        if(i.nome.includes(filme)){
+            res.json(i);
+        }
+    }
+})
+
+modules.import(

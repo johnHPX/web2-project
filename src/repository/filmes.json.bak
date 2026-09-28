@@ -1,0 +1,602 @@
+[
+  {
+    "titulo": "O Poderoso Chefão",
+    "ano": 1972,
+    "sinopse": "O patriarcha idoso de uma dinastia do crime organizado transfere o controle de seu império clandestino para seu filho relutante.",
+    "nota": 9.2
+  },
+  {
+    "titulo": "Um Sonho de Liberdade",
+    "ano": 1994,
+    "sinopse": "Dois homens presos se reúnem ao longo de vários anos, encontrando consolo e eventual redenção através de atos de decência comum.",
+    "nota": 9.3
+  },
+  {
+    "titulo": "O Poderoso Chefão: Parte II",
+    "ano": 1974,
+    "sinopse": "A trajetória da vida e carreira de Vito Corleone em 1920 na cidade de Nova York é retratada, enquanto seu filho, Michael, expande e consolida seu controle sobre o sindicato do crime.",
+    "nota": 9.0
+  },
+  {
+    "titulo": "Batman: O Cavaleiro das Trevas",
+    "ano": 2008,
+    "sinopse": "Quando a ameaça conhecida como O Coringa causa estragos e caos nas pessoas de Gotham, Batman deve aceitar um dos maiores testes psicológicos e físicos de sua capacidade de combater a injustiça.",
+    "nota": 9.0
+  },
+  {
+    "titulo": "12 Homens e uma Sentença",
+    "ano": 1957,
+    "sinopse": "Um jurado relutante em um julgamento de assassinato tenta evitar um erro judicial forçando seus colegas a reexaminarem as evidências.",
+    "nota": 9.0
+  },
+  {
+    "titulo": "A Lista de Schindler",
+    "ano": 1993,
+    "sinopse": "Na Polônia ocupada pelos alemães durante a Segunda Guerra Mundial, o industrial Oskar Schindler começa a se preocupar com seus trabalhadores judeus após testemunhar sua perseguição pelos nazistas.",
+    "nota": 9.0
+  },
+  {
+    "titulo": "O Senhor dos Anéis: O Retorno do Rei",
+    "ano": 2003,
+    "sinopse": "Gandalf e Aragorn lideram o Mundo dos Homens contra o exército de Sauron para desviar o olhar de Frodo e Sam ao se aproximarem da Montanha da Perdição com o Um Anel.",
+    "nota": 9.0
+  },
+  {
+    "titulo": "Pulp Fiction: Tempo de Violência",
+    "ano": 1994,
+    "sinopse": "As vidas de dois assassinos da máfia, um boxeador, um gângster e sua esposa, e dois bandidos de lanchonete se entrelaçam em quatro histórias de violência e redenção.",
+    "nota": 8.9
+  },
+  {
+    "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+    "ano": 2001,
+    "sinopse": "Um jovem hobbit, Frodo Bolseiro, herda um anel mágico misterioso e embarca em uma jornada perigosa para destruí-lo nas fogueiras da Montanha da Perdição.",
+    "nota": 8.8
+  },
+  {
+    "titulo": "Três Homens em Conflito",
+    "ano": 1966,
+    "sinopse": "Um conto de recompensa sobre a Guerra Civil americana com um mistério de uma fortuna em ouro enterrada.",
+    "nota": 8.8
+  },
+  {
+    "titulo": "Forrest Gump: O Contador de Histórias",
+    "ano": 1994,
+    "sinopse": "As presidências de Kennedy e Johnson, a guerra do Vietnã, o caso Watergate e outros eventos históricos se desdobram da perspectiva de um homem do Alabama com um QI abaixo da média.",
+    "nota": 8.8
+  },
+  {
+    "titulo": "A Origem",
+    "ano": 2010,
+    "sinopse": "Um ladrão que rouba segredos corporativos através do uso da tecnologia de compartilhamento de sonhos recebe a tarefa inversa de plantar uma ideia na mente de um CEO.",
+    "nota": 8.8
+  },
+  {
+    "titulo": "O Senhor dos Anéis: As Duas Torres",
+    "ano": 2002,
+    "sinopse": "Enquanto Frodo e Sam se aproximam de Mordor com a ajuda do Gollum, a dividida sociedade forma uma nova aliança contra as forças do mal de Saruman.",
+    "nota": 8.8
+  },
+  {
+    "titulo": "Clube da Luta",
+    "ano": 1999,
+    "sinopse": "Um homem de escritório descontente e um fabricante de sabonete charmoso formam um clube de luta clandestino que evolui para algo muito maior.",
+    "nota": 8.8
+  },
+  {
+    "titulo": "Matrix",
+    "ano": 1999,
+    "sinopse": "Um hacker de computador aprende com misteriosos rebeldes sobre a verdadeira natureza de sua realidade e seu papel na guerra contra seus controladores.",
+    "nota": 8.7
+  },
+  {
+    "titulo": "Os Bons Companheiros",
+    "ano": 1990,
+    "sinopse": "A história de Henry Hill e sua vida na máfia, cobrindo sua relação com sua esposa Karen Hill e seus parceiros criminosos Jimmy Conway e Tommy DeVito.",
+    "nota": 8.7
+  },
+  {
+    "titulo": "Interestelar",
+    "ano": 2014,
+    "sinopse": "Uma equipe de exploradores viaja através de um buraco de minhoca no espaço na tentativa de garantir a sobrevivência da humanidade.",
+    "nota": 8.7
+  },
+  {
+    "titulo": "Os Caçadores da Arca Perdida",
+    "ano": 1981,
+    "sinopse": "O arqueólogo e aventureiro Indiana Jones é contratado pelo governo dos EUA para encontrar a Arca da Aliança antes que os nazistas o façam.",
+    "nota": 8.7
+  },
+  {
+    "titulo": "Viagem de Chihiro",
+    "ano": 2001,
+    "sinopse": "Durante a mudança de sua família para os subúrbios, uma menina de 10 anos vaga por um mundo misterioso governado por deuses, bruxas e espíritos, e onde os humanos são transformados em animais.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "O Resgate do Soldado Ryan",
+    "ano": 1998,
+    "sinopse": "Após o desembarque na Normandia, um grupo de soldados americanos vai atrás das linhas inimigas para resgatar um paraquedista cujos irmãos morreram na guerra.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "À Espera de um Milagre",
+    "ano": 1999,
+    "sinopse": "Os eventos na vida de um guarda de corredor da morte no corredor da morte durante a Grande Depressão dos EUA, e seus eventos sobrenaturais observados com um preso incomum.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "Intersticial / Interstellar (Duplicata evitada: O Silêncio dos Inocentes)",
+    "ano": 1991,
+    "sinopse": "Uma jovem cadete do FBI deve receber a ajuda de um assassino canibal encarcerado e manipulador para ajudar a capturar outro serial killer.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "A Vida é Bela",
+    "ano": 1997,
+    "sinopse": "Um judeu italiano aberto e cheio de imaginação usa sua vontade, humor e imaginação para proteger seu pequeno filho dos perigos de um campo de concentração nazista.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "Os Sete Samurais",
+    "ano": 1954,
+    "sinopse": "Uma vila agrícola pobre sob ataque de bandidos contrata sete samurais ronin para protegê-los.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "Cidade de Deus",
+    "ano": 2002,
+    "sinopse": "Nos subúrbios do Rio de Janeiro, dois rapazes seguem caminhos diferentes: um se torna fotógrafo, o outro traficante de drogas.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "De Volta para o Futuro",
+    "ano": 1985,
+    "sinopse": "Marty McFly, um estudante do ensino médio de 17 anos, é enviado acidentalmente trinta anos para o passado em um DeLorean movido a plutônio inventado pelo seu amigo cientista.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Psicose",
+    "ano": 1960,
+    "sinopse": "Uma secretária em fuga rouba dinheiro do seu empregador e foge, parando em um motel isolado administrado por um jovem perturbado.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "O Pianista",
+    "ano": 2002,
+    "sinopse": "Um músico judeu polonês luta para sobreviver à destruição do gueto de Varsóvia durante a Segunda Guerra Mundial.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Os Infiltrados",
+    "ano": 2006,
+    "sinopse": "Um policial se infiltra em uma gangue irlandesa e um espião da mesma gangue se infiltra na polícia, ambos tentando descobrir a identidade um do outro.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Gladiador",
+    "ano": 2000,
+    "sinopse": "Um ex-general romano busca vingança contra o corrupto imperador que assassinou sua família e o enviou para a escravidão.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "O Rei Leão",
+    "ano": 1994,
+    "sinopse": "O jovem leão Simba é forçado a deixar sua tribo após o assassinato de seu pai por seu tio cruel, retornando anos depois para reivindicar seu trono.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Whiplash: Em Busca da Perfeição",
+    "ano": 2014,
+    "sinopse": "Um promissor baterista de jazz se matricula em um conservatório musical impiedoso onde seu sonho de grandeza é guiado por um instrutor abusivo.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Profissional: Leon",
+    "ano": 1994,
+    "sinopse": "12, Mathilda é acolhida por Leon, um assassino profissional, depois que sua família é massacrada.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Os Suspeitos",
+    "ano": 1995,
+    "sinopse": "Um único sobrevivente conta a história tortuosa de um acordo de contrabando de drogas que deu terrivelmente errado, começando com uma fila de suspeitos em uma delegacia.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Amnésia",
+    "ano": 2000,
+    "sinopse": "Um homem com perda de memória de curto prazo usa notas e tatuagens para tentar rastrear o assassino de sua esposa.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Janela Indiscreta",
+    "ano": 1954,
+    "sinopse": "Um fotógrafo confinado a uma cadeira de rodas espiona seus vizinhos e passa a acreditar que um deles cometeu um assassinato.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Apocalypse Now",
+    "ano": 1979,
+    "sinopse": "Durante a guerra do Vietnã, um capitão do exército americano é enviado em uma missão perigosa para encontrar e assassinar um coronel renegado.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Alien, o 8º Passageiro",
+    "ano": 1979,
+    "sinopse": "A tripulação de uma espaçonave comercial investiga um sinal de socorro em um planeta distante e encontra uma forma de vida mortal.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "Brilho Eterno de uma Mente sem Lembranças",
+    "ano": 2004,
+    "sinopse": "Quando o relacionamento deles azeda, um casal decide fazer um procedimento médico para apagar um ao outro de suas memórias.",
+    "nota": 8.3
+  },
+  {
+    "titulo": "Django Livre",
+    "ano": 2012,
+    "sinopse": "Com a ajuda de um caçador de recompensas alemão, um escravo liberto viaja pela América para resgatar sua esposa de um brutal proprietário de plantação.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Caçadores da Arca Perdida (Duplicada substituída por Os Imperdoáveis)",
+    "ano": 1992,
+    "sinopse": "Um pistoleiro aposentado aceita um último trabalho em parceria com seus velhos amigos.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "Os Oito Odiados",
+    "ano": 2015,
+    "sinopse": "Em Wyoming, após a Guerra Civil, caçadores de recompensas tentam encontrar abrigo em uma hospedaria durante uma nevasca, encontrando figuras suspeitas.",
+    "nota": 7.8
+  },
+  {
+    "titulo": "Avatar",
+    "ano": 2009,
+    "sinopse": "Um fuzileiro naval paraplégico despachado para a lua Pandora em uma missão única se divide entre seguir ordens e proteger o mundo que ele sente ser sua casa.",
+    "nota": 7.9
+  },
+  {
+    "titulo": "Vingadores: Ultimato",
+    "ano": 2019,
+    "sinopse": "Após os eventos devastadores de Vingadores: Guerra Infinita, o universo está em ruínas. Com a ajuda dos aliados restantes, os Vingadores se reunirão mais uma vez para reverter as ações de Thanos.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "O Exterminador do Futuro 2: O Julgamento Final",
+    "ano": 1991,
+    "sinopse": "Um ciborgue, que foi enviado anteriormente para matar Sarah Connor, deve proteger seu filho adolescente de um ciborgue mais avançado e maleável.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "De Volta para o Futuro Parte II",
+    "ano": 1989,
+    "sinopse": "Marty e Doc viajam para o futuro para salvar os futuros filhos de Marty de um desastre, mas acidentalmente alteram a linha do tempo.",
+    "nota": 7.8
+  },
+  {
+    "titulo": "Spider-Man: Através do Aranhaverso",
+    "ano": 2023,
+    "sinopse": "Miles Morales atravessa o Multiverso, onde ele junta forças com uma equipe de Pessoas-Aranha para enfrentar uma ameaça formidável.",
+    "nota": 8.7
+  },
+  {
+    "titulo": "Homem-Aranha: No Aranhaverso",
+    "ano": 2018,
+    "sinopse": "Teenager Miles Morales se torna o Homem-Aranha de seu universo e deve cruzar caminhos com contrapartes dimensionais para parar uma ameaça a todas as realidades.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Toy Story",
+    "ano": 1995,
+    "sinopse": "Um cowboy de brinquedo se sente ameaçado e com ciúmes quando um boneco de astronauta estiloso ganha o status de brinquedo favorito de seu dono.",
+    "nota": 8.3
+  },
+  {
+    "titulo": "Toy Story 3",
+    "ano": 2010,
+    "sinopse": "Os brinquedos são acidentalmente doados para uma creche ensolarada quando seu dono Andy se prepara para ir para a faculdade.",
+    "nota": 8.3
+  },
+  {
+    "titulo": "Up: Altas Aventuras",
+    "ano": 2009,
+    "sinopse": "Um vendedor de balões viúvo de 78 anos embarca em uma jornada para a América do Sul em sua casa flutuante com milhares de balões, levando por engano um jovem escoteiro.",
+    "nota": 8.3
+  },
+  {
+    "titulo": "Procurando Nemo",
+    "ano": 2003,
+    "sinopse": "Após seu filho ser capturado na Grande Barreira de Corais e levado para Sydney, um peixe-palhaço tímido embarca em uma jornada para trazê-lo para casa.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "WALL-E",
+    "ano": 2008,
+    "sinopse": "Em um futuro distante, um pequeno robô compactador de lixo embarca em uma jornada espacial que decidirá o destino da humanidade.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Divertida Mente",
+    "ano": 2015,
+    "sinopse": "As emoções de uma garota - Alegria, Medo, Raiva, Nojinho e Tristeza - tentam navegar por sua nova vida após uma mudança estressante para São Francisco.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Monstros S.A.",
+    "ano": 2001,
+    "sinopse": "Monstros geram energia para sua cidade assustando crianças, mas entram em pânico quando uma menina humana entra em seu mundo.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Ratatouille",
+    "ano": 2007,
+    "sinopse": "Um rato que pode cozinhar faz uma aliança incomum com um jovem funcionário de um famoso restaurante parisiense.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Os Incríveis",
+    "ano": 2004,
+    "sinopse": "Uma família de super-heróis disfarçada tenta viver uma vida suburbana normal, mas é forçada a entrar em ação para salvar o mundo.",
+    "nota": 8.0
+  },
+  {
+    "titulo": "Coco",
+    "ano": 2017,
+    "sinopse": "Um aspirante a músico chamado Miguel, confrontado com a proibição ancestral de sua família à música, entra na Terra dos Mortos para encontrar seu bisavô músico.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Jurassic Park: Parque dos Dinossauros",
+    "ano": 1993,
+    "sinopse": "Durante um teste de pré-abertura, um tema park populado por dinossauros clonados sofre uma grande falha de segurança, soltando as criaturas.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "Tubarão",
+    "ano": 1975,
+    "sinopse": "Um grande tubarão branco aterroriza uma pequena cidade de praia americana, levando um chefe de polícia, um biólogo marinho e um caçador de tubarões a caçá-lo.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "E.T. O Extraterrestre",
+    "ano": 1982,
+    "sinopse": "Um garoto solitário faz amizade com um ser alienígena gentil que foi deixado para trás na Terra, tentando ajudá-lo a voltar para casa.",
+    "nota": 7.9
+  },
+  {
+    "titulo": "Titanic",
+    "ano": 1997,
+    "sinopse": "Um artista pobre e uma jovem rica se apaixonam a bordo do infeliz navio RMS Titanic durante sua viagem inaugural.",
+    "nota": 7.9
+  },
+  {
+    "titulo": "Avatar: O Caminho da Água",
+    "ano": 2022,
+    "sinopse": "Jake Sully vive com sua nova família formada no planeta Pandora. Uma ameaça familiar retorna para terminar o que começou anteriormente.",
+    "nota": 7.6
+  },
+  {
+    "titulo": "O Grande Hotel Budapeste",
+    "ano": 2014,
+    "sinopse": "As aventuras de Gustave H, um lendário concierge em um famoso hotel europeu entre as guerras, e Zero Moustafa, o lobby boy que se torna seu amigo mais confiável.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Rocky: Um Lutador",
+    "ano": 1976,
+    "sinopse": "Um pequeno boxeador da Filadélfia ganha uma chance improvável de lutar pelo título mundial dos pesos pesados contra o campeão Apollo Creed.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Scarface",
+    "ano": 1983,
+    "sinopse": "Em Miami em 1980, um imigrante cubano determinado assume um cartel de drogas e sucumbe à ganância.",
+    "nota": 8.3
+  },
+  {
+    "titulo": "Taxi Driver",
+    "ano": 1976,
+    "sinopse": "Um veterano da guerra do Vietnã mentalmente instável trabalha como taxista noturno na cidade de Nova York, onde a percepção da decadência urbana o alimenta em direção à violência.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "O Labirinto do Fauno",
+    "ano": 2006,
+    "sinopse": "No pós-guerra na Espanha fascista, a jovem enteada de um sádico oficial do exército escapa para um mundo de fantasia assustador e fascinante.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "Sin City: A Cidade do Pecado",
+    "ano": 2005,
+    "sinopse": "Uma exploração de uma cidade violenta e corajosa que traz uma série de seus residentes e criminosos para o centro das atenções.",
+    "nota": 8.0
+  },
+  {
+    "titulo": "Kill Bill: Volume 1",
+    "ano": 2003,
+    "sinopse": "Após ser deixada para morrer por sua antiga equipe de assassinos no dia de seu casamento, uma mulher acorda de um coma e busca vingança implacável.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "Oldboy",
+    "ano": 2003,
+    "sinopse": "Depois de ser sequestrado e preso por 15 anos sem explicação, Oh Dae-su é libertado e tem cinco dias para encontrar seu capturador.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Mad Max: Estrada da Fúria",
+    "ano": 2015,
+    "sinopse": "Em um mundo pós-apocalíptico, Max se une a uma misteriosa mulher, Imperator Furiosa, para tentar escapar de um tirano tirânico em uma perseguição de carro.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Duna",
+    "ano": 2021,
+    "sinopse": "Paul Atreides, um jovem brilhante e talentoso nascido em um grande destino além de sua compreensão, deve viajar para o planeta mais perigoso do universo para garantir o futuro de sua família e de seu povo.",
+    "nota": 8.0
+  },
+  {
+    "titulo": "Duna: Parte 2",
+    "ano": 2024,
+    "sinopse": "Paul Atreides se une a Chani e aos Fremen enquanto busca vingança contra os conspiradores que destruíram sua família.",
+    "nota": 8.6
+  },
+  {
+    "titulo": "Top Gun: Maverick",
+    "ano": 2022,
+    "sinopse": "Depois de mais de trinta anos de serviço como um dos principais aviadores da Marinha, Pete Mitchell está onde pertence, testando limites como um piloto de testes corajoso.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "John Wick: De Volta ao Jogo",
+    "ano": 2014,
+    "sinopse": "Um ex-assassino de aluguel sai da aposentadoria para rastrear os gângsteres que roubaram seu carro e mataram o cachorro que sua falecida esposa lhe deixou.",
+    "nota": 7.4
+  },
+  {
+    "titulo": "Drive",
+    "ano": 2011,
+    "sinopse": "Um dublê de Hollywood e mecânico que trabalha como motorista de fuga à noite se vê em apuros quando tenta ajudar a esposa de seu vizinho.",
+    "nota": 7.8
+  },
+  {
+    "titulo": "Coringa",
+    "ano": 2019,
+    "sinopse": "Em Gotham City, o comediante mentalmente perturbado Arthur Fleck é ignorado e maltratado pela sociedade, embarcando em uma descida revolucionária no crime.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "O Grande Lebowski",
+    "ano": 1998,
+    "sinopse": "Jeff 'The Dude' Lebowski é confundido com um milionário com o mesmo nome e busca indenização por seu tapete arruinado.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Snatch: Porcos e Diamantes",
+    "ano": 2000,
+    "sinopse": "Promotores de luta de boxe clandestina sem escrúpulos, gângsteres violentos e ladrões de diamantes desajeitados colidem na busca por um diamante roubado.",
+    "nota": 8.3
+  },
+  {
+    "titulo": "Trainspotting: Sem Limites",
+    "ano": 1996,
+    "sinopse": "Renton se envolve com o uso de heroína na Escócia, navegando por amizades e escolhas autodestrutivas com seu grupo de amigos viciados.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Donnie Darko",
+    "ano": 2001,
+    "sinopse": "Um adolescente problemático é atormentado por visões de um coelho gigante que o manipula a cometer uma série de crimes após escapar por pouco de um acidente bizarro.",
+    "nota": 8.0
+  },
+  {
+    "titulo": "Her",
+    "ano": 2013,
+    "sinopse": "Em um futuro próximo, um homem solitário desenvolve um relacionamento improvável com um sistema operacional projetado para atender a todas as suas necessidades.",
+    "nota": 8.0
+  },
+  {
+    "titulo": "Ex Machina: Instinto Artificial",
+    "ano": 2014,
+    "sinopse": "Um programador é convidado para a casa isolada de seu chefe bilionário para avaliar um robô humanoide com inteligência artificial avançada.",
+    "nota": 7.7
+  },
+  {
+    "titulo": "A Chegada",
+    "ano": 2016,
+    "sinopse": "Uma linguista trabalha com o exército para se comunicar com alienígenas após doze espaçonaves misteriosas aparecerem ao redor da Terra.",
+    "nota": 7.9
+  },
+  {
+    "titulo": "Blade Runner 2049",
+    "ano": 2017,
+    "sinopse": "Um jovem blade runner descobre um segredo há muito enterrado que tem o potencial de mergulhar o que resta da sociedade no caos.",
+    "nota": 8.0
+  },
+  {
+    "titulo": "Blade Runner: O Caçador de Andróides",
+    "ano": 1982,
+    "sinopse": "Um caçador de andróides deve perseguir e eliminar quatro replicantes que escaparam para a Terra em busca de sua sobrevivência.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Ghost in the Shell: O Fantasma da Máquina",
+    "ano": 1995,
+    "sinopse": "Uma ciborgue oficial das forças especiais caça um misterioso hacker conhecido como o Mestre dos Fantoches.",
+    "nota": 7.9
+  },
+  {
+    "titulo": "Akira",
+    "ano": 1988,
+    "sinopse": "Um jovem motociclista com poderes psicocinéticos recém-descobertos ameaça destruir Neo-Tokyo pós-apocalíptica antes que um grupo de ativistas intervenha.",
+    "nota": 8.0
+  },
+  {
+    "titulo": "Princesa Mononoke",
+    "ano": 1997,
+    "sinopse": "Em uma jornada para encontrar uma cura para a maldição de um javali demônio, Ashitaka se vê envolvido em uma guerra entre os deuses da floresta e uma colônia de mineração.",
+    "nota": 8.3
+  },
+  {
+    "titulo": "Meu Amigo Totoro",
+    "ano": 1988,
+    "sinopse": "Duas jovens se mudam para o campo para ficar mais perto de sua mãe doente e interagem com espíritos amigáveis da floresta.",
+    "nota": 8.1
+  },
+  {
+    "titulo": "Túmulo dos Vagalumes",
+    "ano": 1988,
+    "sinopse": "Um jovem e sua irmã mais nova lutam para sobreviver nos meses finais da Segunda Guerra Mundial no Japão.",
+    "nota": 8.5
+  },
+  {
+    "titulo": "O Iluminado",
+    "ano": 1980,
+    "sinopse": "Uma família vai para um hotel isolado para o inverno onde uma presença espiritual influente faz o pai perder a sanidade, afetando o seu filho jovem.",
+    "nota": 8.4
+  },
+  {
+    "titulo": "Hereditário",
+    "ano": 2018,
+    "sinopse": "Após a morte de sua matriarca reclusa, uma família começa a desvendar segredos cada vez mais aterrorizantes sobre sua ancestralidade.",
+    "nota": 7.3
+  },
+  {
+    "titulo": "Corra!",
+    "ano": 2017,
+    "sinopse": "Um jovem afro-americano visita a família de sua namorada branca em um fim de semana, onde descobre segredos perturbadores sobre o comportamento incomum dos moradores.",
+    "nota": 7.8
+  },
+  {
+    "titulo": "Nós",
+    "ano": 2019,
+    "sinopse": "As férias pacíficas de uma família na praia viram de cabeça para baixo quando um grupo de figuras misteriosas aparece em sua porta e se revela como cópias idênticas deles mesmos.",
+    "nota": 6.8
+  },
+  {
+    "titulo": "O Sexto Sentido",
+    "ano": 1999,
+    "sinopse": "Um garoto que se comunica com espíritos busca a ajuda de um psicólogo infantil desiludido após um trauma pessoal.",
+    "nota": 8.2
+  },
+  {
+    "titulo": "Os Outros",
+    "ano": 2001,
+    "sinopse": "Uma mulher que vive em uma casa escura com seus dois filhos sensíveis à luz solar passa a acreditar que sua casa está mal-assombrada.",
+    "nota": 7.6
+  },
+  {
+    "titulo": "A Bruxa",
+    "ano": 2015,
+    "sinopse": "Em 1630 na Nova Inglaterra, uma família puritana se isola na floresta, onde forças maléficas misteriosas começam a assombrá-los.",
+    "nota": 7.0
+  },
+  {
+    "titulo": "Ilha do Medo",
+    "ano": 2010,
+    "sinopse": "Dois delegados federais investigam o desaparecimento de uma paciente em um hospital psiquiátrico localizado em uma ilha isolada.",
+    "nota": 8.2
+  }
+]
