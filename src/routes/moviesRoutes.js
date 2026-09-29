@@ -8,30 +8,43 @@ router.get('/', (req, res) => {
 });
 
 router.get('/pdf', (req, res) => {
-  const doc = new PDFDocument({ margin: 30 });
+  try {
+    const doc = new PDFDocument({ margin: 30 });
+    const buffers = [];
 
-  res.setHeader('Content-Type', 'application/pdf');
-  res.setHeader('Content-Disposition', 'attachment; filename=claquete_catalogo.pdf');
+    doc.on('data', chunk => buffers.push(chunk));
+    
+    doc.on('end', () => {
+      const pdfBuffer = Buffer.concat(buffers);
 
-  doc.pipe(res);
+      res.setHeader('Content-Type', 'application/pdf');
+      res.setHeader('Content-Disposition', 'attachment; filename=claquete_catalogo.pdf');
+      res.setHeader('Content-Length', pdfBuffer.length);
 
-  doc.fontSize(20).text('Claquete API - Catálogo', { align: 'center' });
-  doc.moveDown();
+      return res.status(200).send(pdfBuffer);
+    });
 
-  movies.forEach(m => {
-    const listaGeneros = Array.isArray(m.generos) ? m.generos.join(', ') : m.generos;
-    doc.fontSize(14).text(`[${m.id}] ${m.titulo} (${m.ano}) - Nota: ${m.nota}`);
-    doc.fontSize(10).text(`Gênero(s): ${listaGeneros} | Duração: ${m.duracao} | Idioma: ${m.idioma}`);
-    doc.fontSize(10).text(`Diretor: ${m.diretor}`);
-    doc.fontSize(10).text(`Sinopse: ${m.sinopse}`);
-    doc.moveDown(1.5);
-  });
+    doc.fontSize(20).text('Claquete API - Catálogo', { align: 'center' });
+    doc.moveDown();
 
-  doc.end();
+    movies.forEach(m => {
+      const listaGeneros = Array.isArray(m.generos) ? m.generos.join(', ') : m.generos;
+      doc.fontSize(14).text(`[${m.id}] ${m.titulo} (${m.ano}) - Nota: ${m.nota}`);
+      doc.fontSize(10).text(`Gênero(s): ${listaGeneros} | Duração: ${m.duracao} | Idioma: ${m.idioma}`);
+      doc.fontSize(10).text(`Diretor: ${m.diretor}`);
+      doc.fontSize(10).text(`Sinopse: ${m.sinopse}`);
+      doc.moveDown(1.5);
+    });
+
+    doc.end();
+  } catch (error) {
+    console.error('Erro ao gerar PDF:', error);
+    res.status(500).json({ error: 'Erro interno ao gerar o PDF.' });
+  }
 });
 
 router.get('/:id', (req, res) => {
-  const id = req.params.id; // Removido o parseInt
+  const id = req.params.id;
   const movie = movies.find(m => m.id === id);
 
   if (!movie) {
