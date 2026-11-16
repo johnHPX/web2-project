@@ -109,7 +109,7 @@ async function generatePDF(req, res) {
         : m.generos;
 
       doc.fontSize(14).text(
-        `[${m.id}] ${m.titulo} (${m.ano}) - Nota: ${m.nota}`
+        `[${m._id}] ${m.titulo} (${m.ano}) - Nota: ${m.nota}`
       );
 
       doc.fontSize(10).text(

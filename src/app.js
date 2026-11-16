@@ -1,3 +1,7 @@
+require("dotenv").config();
+
+const { connectDatabase } = require('./config/database');
+
 
 const express = require('express');
 const cors = require('cors');
@@ -17,6 +21,18 @@ app.use(express.json());
 app.use(weekdayCheck);
 app.use(requestLogger);
 
+// Database config
+
+app.use(async (req, res, next) => {
+  try {
+    await connectDatabase();
+    next();
+  } catch (error) {
+    console.error('Erro na conexão com MongoDB:', error);
+    next(error);
+  }
+});
+
 // Rota principal
 app.get('/', (req, res) => {
   res.json({ message: 'Claquete API está funcionando!' });
@@ -25,5 +41,15 @@ app.get('/', (req, res) => {
 // Rotas da API
 app.use('/movies', moviesRoutes);
 app.use('/logs', logsRoutes);
+
+// Tratamento errors database
+
+app.use((err, req, res, next) => {
+  console.error(err);
+
+  res.status(500).json({
+    error: 'Erro interno do servidor.'
+  });
+});
 
 module.exports = app;
