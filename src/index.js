@@ -1,5 +1,7 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const mongoose = require('mongoose');
 
 const weekdayCheck = require('./middlewares/diaUtil');
 const requestLogger = require('./middlewares/requisicoesLogger');
@@ -11,6 +13,10 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('Conectado ao Banco: claquete!'))
+  .catch((err) => console.error('Erro ao conectar ao Banco:', err));
 
 app.use(weekdayCheck);
 app.use(requestLogger);
