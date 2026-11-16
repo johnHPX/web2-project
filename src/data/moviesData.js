@@ -1,6 +1,5 @@
 let movies = [
   {
-    id: "mov0001",
     titulo: "Inception",
     ano: 2010,
     nota: 8.8,
@@ -11,7 +10,6 @@ let movies = [
     idioma: "Inglês"
   },
   {
-    id: "mov0002",
     titulo: "Breaking Bad",
     ano: 2008,
     nota: 9.5,
@@ -22,7 +20,6 @@ let movies = [
     idioma: "Inglês"
   },
   {
-    id: "mov0003",
     titulo: "Interestelar",
     ano: 2014,
     nota: 8.7,
@@ -33,7 +30,6 @@ let movies = [
     idioma: "Inglês"
   },
   {
-    id: "mov0004",
     titulo: "Parasita",
     ano: 2019,
     nota: 8.5,
@@ -44,7 +40,6 @@ let movies = [
     idioma: "Coreano"
   },
   {
-    id: "mov0005",
     titulo: "Corra!",
     ano: 2017,
     nota: 7.8,

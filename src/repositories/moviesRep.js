@@ -1,42 +1,48 @@
-let movies = require('../data/moviesData');
 
-function findAll() {
-  return movies;
+const { getDatabase } = require('../config/database');
+const { ObjectId } = require('mongodb');
+
+function getCollection() {
+  return getDatabase().collection('movies');
 }
 
-function findById(id) {
-  return movies.find(movie => movie.id === id) || null;
+async function findAll() {
+  return await getCollection().find({}).toArray();
 }
 
-function create(movieData) {
-  const lastItem = movies[movies.length - 1];
+async function findById(id) {
+  if (!ObjectId.isValid(id)) {
+    return null;
+  }
 
-  const lastNum = lastItem
-    ? parseInt(lastItem.id.replace('mov', ''))
-    : 0;
+  return await getCollection().findOne({
+    _id: new ObjectId(id)
+  });
+}
 
-  const nextId = `mov${String(lastNum + 1).padStart(4, '0')}`;
-
+async function create(movieData) {
   const newMovie = {
-    id: nextId,
     ...movieData
   };
 
-  movies.push(newMovie);
+  const result = await getCollection().insertOne(newMovie);
 
-  return newMovie;
+  return {
+    _id: result.insertedId,
+    ...newMovie
+  };
 }
 
-function deleteById(id) {
-  const index = movies.findIndex(movie => movie.id === id);
-
-  if (index === -1) {
+async function deleteById(id) {
+  if (!ObjectId.isValid(id)) {
     return false;
   }
 
-  movies.splice(index, 1);
+  const result = await getCollection().deleteOne({
+    _id: new ObjectId(id)
+  });
 
-  return true;
+  return result.deletedCount > 0;
 }
 
 module.exports = {
