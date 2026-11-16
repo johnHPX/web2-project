@@ -8,6 +8,7 @@ const requestLogger = require('./middlewares/requisicoesLogger');
 
 const moviesRoutes = require('./routes/moviesRoutes');
 const logsRoutes = require('./routes/logsRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.get('/', (req, res) => {
 
 app.use('/movies', moviesRoutes);
 app.use('/logs', logsRoutes);
+app.use('/auth', authRoutes);
 
 if (!process.env.VERCEL) {
   const PORT = process.env.PORT || 3000;
