@@ -1,4 +1,4 @@
-const moviesRepository = require('../repositories/moviesRepository');
+const moviesRepository = require('../repositories/moviesRep');
 
 async function getAllMovies() {
   return await moviesRepository.findAll();
