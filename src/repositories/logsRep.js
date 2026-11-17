@@ -21,7 +21,18 @@ async function findByDate(data) {
     .toArray();
 }
 
+
+async function findLatest(limit) {
+  return await getCollection()
+    .find({})
+    .sort({ data: -1, horario: -1 })
+    .limit(limit)
+    .toArray();
+}
+
+
 module.exports = {
   create,
-  findByDate
+  findByDate,
+  findLatest
 };
