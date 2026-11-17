@@ -1,4 +1,5 @@
 const logsService = require('../services/logsService');
+const pendingLogs = new Set();
 
 module.exports = (req, res, next) => {
   const inicio = Date.now();
@@ -16,7 +17,7 @@ module.exports = (req, res, next) => {
     String(now.getSeconds()).padStart(2, '0')
   ].join(':');
 
-  res.on('finish', async () => {
+  res.on('finish', () => {
     const log = {
       data,
       horario,
@@ -26,12 +27,21 @@ module.exports = (req, res, next) => {
       duracao: Date.now() - inicio
     };
 
-    try {
-      await logsService.createLog(log);
-    } catch (error) {
-      console.error('Erro ao registrar requisição:', error);
-    }
+    const logPromise = logsService.createLog(log)
+      .catch(error => {
+        console.error('Erro ao registrar requisição:', error);
+      })
+      .finally(() => {
+        pendingLogs.delete(logPromise);
+      });
+
+    pendingLogs.add(logPromise);
   });
 
   next();
+};
+
+// Aguarda todas as operações de registro pendentes.
+module.exports.waitForPendingLogs = async () => {
+  await Promise.all([...pendingLogs]);
 };

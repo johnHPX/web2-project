@@ -2,6 +2,10 @@ const PDFDocument = require('pdfkit');
 const moviesService = require('../services/moviesService');
 const { generateCSV } = require('../utils/csvGenerator');
 
+function isValidObjectId(id) {
+  return /^[a-fA-F0-9]{24}$/.test(id);
+}
+
 async function getAll(req, res) {
   try {
     const movies = await moviesService.getAllMovies();
@@ -19,6 +23,12 @@ async function getAll(req, res) {
 async function getById(req, res) {
   try {
     const { id } = req.params;
+
+    if (!isValidObjectId(id)) {
+      return res.status(400).json({
+        error: 'ID do filme inválido.'
+      });
+    }
 
     const movie = await moviesService.getMovieById(id);
 
@@ -52,9 +62,16 @@ async function create(req, res) {
   }
 }
 
+
 async function remove(req, res) {
   try {
     const { id } = req.params;
+
+    if (!isValidObjectId(id)) {
+      return res.status(400).json({
+        error: 'ID do filme inválido.'
+      });
+    }
 
     const deleted = await moviesService.deleteMovie(id);
 
@@ -75,6 +92,7 @@ async function remove(req, res) {
     });
   }
 }
+
 
 async function generatePDF(req, res) {
   try {

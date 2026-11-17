@@ -9,7 +9,7 @@ router.get('/', moviesController.getAll);
 // Gerar catálogo PDF
 router.get('/pdf', moviesController.generatePDF);
 
-// Exportar filmes
+// Exportar filmes em CSV
 router.get('/export', moviesController.exportMovies);
 
 // Cadastrar filme
