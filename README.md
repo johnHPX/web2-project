@@ -49,15 +49,14 @@ Crie um arquivo `.env` na raiz do projeto:
 
 ```env
 MONGODB_URI=sua_string_de_conexao
-MONGODB_DATABASE=web2Project
-MONGODB_TEST_DATABASE=web2Project_test
+MONGODB_DATABASE=nome_do_banco_de_desenvolvimento
+MONGODB_TEST_DATABASE=nome_do_banco_de_test
 ```
 
 - `MONGODB_URI`: string de conexão com o MongoDB.
 - `MONGODB_DATABASE`: banco de dados utilizado pela aplicação.
 - `MONGODB_TEST_DATABASE`: banco de dados separado para execução dos testes.
 
-Não compartilhe ou versione o arquivo `.env`, pois ele contém informações sensíveis.
 
 ### Executar a aplicação
 
