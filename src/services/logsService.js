@@ -9,7 +9,13 @@ async function getLogsByDate(data) {
   return await logsRepository.findByDate(data);
 }
 
+async function getLatestLogs(quantidade) {
+  return await logsRepository.findLatest(quantidade);
+}
+
+
 module.exports = {
   createLog,
-  getLogsByDate
+  getLogsByDate,
+  getLatestLogs
 };
