@@ -18,8 +18,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use(weekdayCheck);
 app.use(requestLogger);
+app.use(weekdayCheck);
 
 // Database config
 

@@ -1,7 +1,7 @@
 
 require('dotenv').config();
 
-const movies = require('../src/data/moviesData');
+const movies = require('../data/moviesData');
 
 const {
   connectDatabase,
