@@ -212,7 +212,7 @@ Para executar os testes sequencialmente:
 npm test -- --runInBand
 ```
 
-Os testes utilizam um banco de dados separado (`web2Project_test`), evitando a manipulação dos dados utilizados pela aplicação principal.
+Os testes utilizam um banco de dados separado, evitando a manipulação dos dados utilizados pela aplicação principal.
 
 ## Considerações finais
 
