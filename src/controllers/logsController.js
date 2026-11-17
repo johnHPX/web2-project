@@ -1,4 +1,4 @@
-
+const { generateCSV } = require('../utils/csvGenerator');
 const logsService = require('../services/logsService');
 
 async function getLogs(req, res) {
@@ -49,7 +49,6 @@ async function exportLogs(req, res) {
   try {
     const quantidade = Number(req.query.quantidade);
 
-    // Validação da quantidade solicitada.
     if (
       !Number.isInteger(quantidade) ||
       quantidade < 1 ||
@@ -62,48 +61,17 @@ async function exportLogs(req, res) {
 
     const logs = await logsService.getLatestLogs(quantidade);
 
-    // Colunas que serão exportadas.
-    const headers = [
-      '_id',
-      'data',
-      'horario',
-      'metodo',
-      'rota',
-      'statusCode',
-      'duracao'
+    const columns = [
+      { key: '_id', label: 'ID' },
+      { key: 'data', label: 'Data' },
+      { key: 'horario', label: 'Horário' },
+      { key: 'metodo', label: 'Método HTTP' },
+      { key: 'rota', label: 'Rota' },
+      { key: 'statusCode', label: 'Código HTTP' },
+      { key: 'duracao', label: 'Duração (ms)' }
     ];
 
-    // Escapa os valores para evitar problemas na estrutura do CSV
-    // e neutraliza fórmulas em planilhas.
-    function escapeCSV(value) {
-      let text = String(value ?? '');
-
-      if (/^[\s]*[=+\-@]/.test(text)) {
-        text = `'${text}`;
-      }
-
-      return `"${text.replace(/"/g, '""')}"`;
-    }
-
-    const linhas = [
-      headers.map(escapeCSV).join(';')
-    ];
-
-    for (const log of logs) {
-      const valores = [
-        log._id.toString(),
-        log.data,
-        log.horario,
-        log.metodo,
-        log.rota,
-        log.statusCode,
-        log.duracao
-      ];
-
-      linhas.push(valores.map(escapeCSV).join(';'));
-    }
-
-    const csv = '\uFEFF' + linhas.join('\r\n');
+    const csv = generateCSV(logs, columns);
 
     res.setHeader('Content-Type', 'text/csv; charset=utf-8');
     res.setHeader(

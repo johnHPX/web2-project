@@ -1,5 +1,6 @@
 const PDFDocument = require('pdfkit');
 const moviesService = require('../services/moviesService');
+const { generateCSV } = require('../utils/csvGenerator');
 
 async function getAll(req, res) {
   try {
@@ -133,10 +134,55 @@ async function generatePDF(req, res) {
   }
 }
 
+
+async function exportMovies(req, res) {
+  try {
+    // Recupera todos os filmes do MongoDB.
+    const movies = await moviesService.getAllMovies();
+
+    const columns = [
+      { key: '_id', label: 'ID' },
+      { key: 'titulo', label: 'Título' },
+      { key: 'ano', label: 'Ano' },
+      { key: 'nota', label: 'Nota' },
+      { key: 'sinopse', label: 'Sinopse' },
+      { key: 'duracao', label: 'Duração' },
+      {
+        key: 'generos',
+        label: 'Gêneros',
+        format: value => Array.isArray(value)
+          ? value.join(', ')
+          : value
+      },
+      { key: 'diretor', label: 'Diretor' },
+      { key: 'idioma', label: 'Idioma' }
+    ];
+
+    const csv = generateCSV(movies, columns);
+
+    res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+    res.setHeader(
+      'Content-Disposition',
+      'attachment; filename="claquete_filmes.csv"'
+    );
+
+    return res.status(200).send(csv);
+
+  } catch (error) {
+    console.error('Erro ao exportar filmes:', error);
+
+    return res.status(500).json({
+      error: 'Erro interno ao exportar os filmes.'
+    });
+  }
+}
+
+
 module.exports = {
   getAll,
   getById,
   create,
   remove,
-  generatePDF
+  generatePDF,
+  exportMovies
 };
