@@ -30,7 +30,7 @@ app.use('/movies', moviesRoutes);
 app.use('/logs', logsRoutes);
 app.use('/auth', authRoutes);
 
-if (!process.env.VERCEL) {
+if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => {
     console.log(`Claquete API rodando na porta ${PORT}`);

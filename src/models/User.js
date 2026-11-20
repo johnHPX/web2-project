@@ -4,12 +4,13 @@ const bcrypt = require('bcrypt');
 const userSchema = new mongoose.Schema({
   nome: { type: String, required: true },
   email: { type: String, required: true, unique: true },
-  senha: { type: String, required: true }
+  senha: { type: String, required: true },
+  codigo2fa: { type: String },
+  expiracao2fa: { type: Date }
 });
 
 userSchema.pre('save', async function() {
   if (!this.isModified('senha')) return;
-
   const salt = await bcrypt.genSalt(10);
   this.senha = await bcrypt.hash(this.senha, salt);
 });

@@ -8,7 +8,8 @@ const avaliacaoSchema = new mongoose.Schema({
   duracao: { type: String },
   generos: [{ type: String }],
   diretor: { type: String },
-  idioma: { type: String }
+  idioma: { type: String },
+  imagemCapa: { type: String }
 });
 
 module.exports = mongoose.model('Avaliacao', avaliacaoSchema, 'avaliacoes');
