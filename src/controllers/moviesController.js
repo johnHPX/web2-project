@@ -50,7 +50,9 @@ async function getById(req, res) {
 
 async function create(req, res) {
   try {
-    const movie = await moviesService.createMovie(req.body);
+    const urlImagem = req.file ? req.file.path : '';
+
+    const movie = await moviesService.createMovie(req.body, urlImagem);
 
     return res.status(201).json(movie);
   } catch (error) {

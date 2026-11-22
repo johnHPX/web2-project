@@ -1,4 +1,3 @@
-
 const { getDatabase } = require('../config/database');
 const { ObjectId } = require('mongodb');
 

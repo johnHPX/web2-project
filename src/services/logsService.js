@@ -1,4 +1,3 @@
-
 const logsRepository = require('../repositories/logsRep');
 
 async function createLog(logData) {

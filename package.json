@@ -10,10 +10,14 @@
     "test": "jest"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.11.0",
     "cors": "^2.8.6",
     "dotenv": "^18.0.10",
     "express": "^5.2.1",
     "mongodb": "^7.9.0",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.6.1",
     "pdfkit": "^0.20.2"
   },
   "devDependencies": {

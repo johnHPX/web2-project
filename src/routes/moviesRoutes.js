@@ -3,6 +3,8 @@ const router = express.Router();
 
 const moviesController = require('../controllers/moviesController');
 
+const upload = require('../middlewares/upload');
+
 // Listar filmes
 router.get('/', moviesController.getAll);
 
@@ -13,7 +15,7 @@ router.get('/pdf', moviesController.generatePDF);
 router.get('/export', moviesController.exportMovies);
 
 // Cadastrar filme
-router.post('/', moviesController.create);
+router.post('/', upload.single('imagemCapa'), moviesController.create);
 
 // Buscar filme por ID
 router.get('/:id', moviesController.getById);

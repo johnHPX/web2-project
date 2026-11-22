@@ -1,4 +1,3 @@
-
 const moviesRepository = require('../repositories/moviesRep');
 
 async function getAllMovies() {
@@ -9,7 +8,7 @@ async function getMovieById(id) {
   return await moviesRepository.findById(id);
 }
 
-async function createMovie(movieData) {
+async function createMovie(movieData, urlImagem) {
   const movie = {
     titulo: movieData.titulo,
     ano: movieData.ano,
@@ -20,7 +19,8 @@ async function createMovie(movieData) {
       ? movieData.generos
       : [movieData.generos],
     diretor: movieData.diretor,
-    idioma: movieData.idioma
+    idioma: movieData.idioma,
+    imagemCapa: urlImagem
   };
 
   return await moviesRepository.create(movie);
