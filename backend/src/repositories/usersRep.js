@@ -13,8 +13,7 @@ async function create(usersData) {
   const result = await getCollection().insertOne(newUser);
 
   return {
-    _id: result.insertedId,
-    ...newUser
+    _id: result.insertedId
   };
 }
 

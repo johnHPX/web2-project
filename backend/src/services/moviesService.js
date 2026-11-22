@@ -23,6 +23,7 @@ async function createMovie(movieData, urlImagem) {
     imagemCapa: urlImagem
   };
 
+
   return await moviesRepository.create(movie);
 }
 

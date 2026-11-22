@@ -3,7 +3,7 @@ const crypto = require('crypto');
 
 const AppError = require('../utils/appErrors');
 const usersRep = require('../repositories/usersRep');
-const emailUtils = require('../utils/emailUtils')
+const emailService = require('./emailService')
 
 async function createUser(userData) {
   const senhaHash = await bcrypt.hash(userData.senha, 12);
@@ -54,7 +54,7 @@ async function loginUser(userData) {
     throw new AppError("Erro ao atualizar usuario", 409, 1004)
   }
 
-  return await emailUtils.sendEmail(userExists.email, codigo);
+  return await emailService.sendEmail(userExists.email, codigo);
 }
 
 async function verify2FAUser(userData) {

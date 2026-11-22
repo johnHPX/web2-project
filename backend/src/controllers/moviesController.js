@@ -54,7 +54,7 @@ async function create(req, res) {
 
     const movie = await moviesService.createMovie(req.body, urlImagem);
 
-    return res.status(201).json(movie);
+    return res.status(201).json({ message: "Filme criado com sucesso!", movie: movie });
   } catch (error) {
     console.error('Erro ao cadastrar filme:', error);
 

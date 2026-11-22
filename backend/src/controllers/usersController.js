@@ -6,7 +6,7 @@ async function create(req, res, next) {
 
     return res.status(201).json({ message: 'Usuário criado com sucesso!', user: user });
   } catch (error) {
-    next(error)
+    next(error);
   }
 }
 
@@ -16,7 +16,7 @@ async function login(req, res, next) {
 
     return res.status(200).json({ message: 'E-mail enviado! Verifique sua caixa de entrada para obter o código de acesso.' });
   } catch (error) {
-    next(error)
+    next(error);
   }
 }
 
@@ -26,7 +26,7 @@ async function verify2FA(req, res, next) {
 
     return res.status(200).json({ message: 'Autenticação concluída com sucesso! Bem-vindo(a).' });
   } catch (error) {
-    next(error)
+    next(error);
   }
 }
 

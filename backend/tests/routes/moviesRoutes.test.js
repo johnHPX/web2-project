@@ -118,10 +118,12 @@ describe('Movies API', () => {
         .send(newMovie);
 
       expect(response.status).toBe(201);
-      expect(response.body).toHaveProperty('_id');
-      expect(response.body.titulo).toBe(newMovie.titulo);
+      expect(response.body.movie).toHaveProperty('_id');
+      expect(response.body.movie.titulo).toBe(newMovie.titulo);
 
-      createdMovieIds.push(new ObjectId(response.body._id));
+      createdMovieIds.push(
+        new ObjectId(response.body.movie._id)
+      );
     });
 
   });
